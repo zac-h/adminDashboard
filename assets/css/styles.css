@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto auto;
+}
+
+.sidebar{
+    grid-row: 1 / span 2;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: min-content 2fr;
+}
+
+.main-content{
+    display: grid;
+    grid-template-columns: 3fr 1fr;  
+    background-color: rgb(232, 232, 232); 
+    gap: 20px;
+    padding: 20px;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.project-card{
+    border-radius: 5px;
+    border-left: 10px solid;
+    border-color: orange;
+    padding: 20px;
+    background-color: white;
+}
+
+h3{
+
+    padding-bottom: 10px;;
+}
+
+
